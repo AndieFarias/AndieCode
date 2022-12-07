@@ -7,36 +7,33 @@ body {
     background-color: #403e3e; 
 }
 
-#header{
+#header, ul, li{
     width: auto;
     margin: auto;
     text-align: right;
     float: right;
-    padding-top: 0px; 
-}
-
-ul li{
+    padding-top: 1px; 
     color: white;
     list-style: none;
-    float: left;
+    float: right;
 }
 
 h1{
     color: white;
     line-height: 200px;
     font-size: 90px;
-    font-kerning: auto;
+    box-align: center;
 }
 
 #search, input{
     width: 500px;
-    height: 20px;
+    height: 40px;
     background-color: white;
-	border-radius:8px;
+    border-color: none;
+	border-radius:10px;
     text-size-adjust: 100%;
-    padding-top: 3px;
-    padding-bottom: 5px;
-    float: none;
+    display: block;
+    margin: 0 auto;
 }
 
 #button{
