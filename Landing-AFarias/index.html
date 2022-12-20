@@ -7,108 +7,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href= "estilos-landing-af.css" rel="stylesheet">
     <title>Trainability Mx</title>
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/M+PLUS+Rounded+1c?query=rounded">
-
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c">
+    <style type="text/css">
+      body {
+        font-family: 'M PLUS Rounded 1c', medium;
+      }
+    </style>
 </head>
 
 <body>
-  <!-- Header section -->
-  <header class="relative">
-    <div class= "logo" a href="#"> </a>
-      <img class="logo" src="/Imgs/polymer.png">
-    </div>
-
-   <!-- Menu lateral -->
-    <div class="menu">
-      <a href="#"> Precios </a>
-      <a href="#">Conoce más</a>
-      <a href="#">Contacto</a>
-    </div>
-    </header>
-    
-    <!-- Jumbotron- main section -->
-    <main>
-      <h1>
-        <span class="block">Cumple tus metas deportivas de manera inteligente</span>
-      </h1>
-      <p>
-        Lograr tu mejor rendimiento no está peleado con tu estilo de vida
-      </p>
-      <div class="mt-10 sm:mt-12">
-        <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
-          <div class="sm:flex">
-            <div class="min-w-0 flex-1">
-              <label for="email" class="sr-only">Email address</label>
-              <input id="email" type="email" placeholder="Ingresa tu correo" class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-            </div>
-            <div class="mt-3 sm:mt-0 sm:ml-3">
-              <button type="submit" class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900" style="background-color: #369ba8;">Enviar</button>
-            </div>
-          </div>
-          <p class="mt-3 text-sm text-gray-300 sm:mt-4">Te contactaremos en 24 horas. Aceptamos todas las tarjetas de crédito y débito. <a href="#" class="font-medium text-white">Conoce nuestros términos y condiciones</a>.</p>
-        </form>
-      </div>
-    </main>
-
-    <!-- Blog -->
-    <div>
-          <h2>Conoce más</h2>
-          <p>
-            Trainability Mx
-          </p>
-          <p>
-            ¿Quieres entrenar donde sea y cuando sea? Esta es la mejor opción
-          </p>
-    </div>
-
-    <div>
-      <img class="items" src="https://www.openaccessgovernment.org/wp-content/uploads/2018/08/dreamstime_s_42579151.jpg" alt="">
-    </div>
-      <div>
-        <p>
-          <a href="#" class="hover:underline"> Conoce más
-          </a>
-        </p>
-          <a href="#">
-            <p> Entrenamiento personalizado
-            </p>
-            <p> Programa de entrenamiento en línea. Obtén mejores resultados en tu rendimiento deportivo.
-            </p>
+  <div class="bg-blue">
+    <!-- Header section -->
+    <div class="relative-overflow-hidden">
+      <header class="relative">
+        <div class= "logo">
+           <a href="#">
+            <span class="sr-only"> </span> 
+            <img class="logo" src="/Imgs/polymer.png">
           </a>
         </div>
 
-        <div>
-          <img class="items" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROkQNSKNA7dRtPSl3FvXxQlibTuMNljFswCg&usqp=CAU" alt="">
+    <!-- Menu lateral -->
+      <nav>
+        <div class="menu" >
+          <a href="#" class="text-white"> Precios </a>
+          <a href="#" class="text-white">Conoce más</a>
+          <a href="#" class="text-white">Contacto</a>
         </div>
-          <div>
-            <p>
-              <a href="#" class="hover:underline"> Conoce más
-              </a>
-            </p>
-              <a href="#">
-                <p> Entrenamiento personalizado
-                </p>
-                <p> Programa de entrenamiento en línea. Obtén mejores resultados en tu rendimiento deportivo.
-                </p>
-              </a>
-            </div>
-
-            <div>
-              <img class="items" src="https://media1.popsugar-assets.com/files/thumbor/vfKZC1EoCN8Kmolk2Vrj8vpRpx4/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2018/10/04/692/n/1922729/cb7f5be45bb63396984fc6.71791194_/i/Weekly-Workout-Plan-Women.jpg" alt="">
-            </div>
-              <div>
-                <p>
-                  <a href="#" class="hover:underline"> Conoce más
-                  </a>
-                </p>
-                  <a href="#">
-                    <p> Entrenamiento personalizado
-                    </p>
-                    <p> Programa de entrenamiento en línea. Obtén mejores resultados en tu rendimiento deportivo.
-                    </p>
-                  </a>
+      </nav>
+      </header>
+      
+      <!-- Jumbotron- main section -->
+      <main>
+        <div class="maingrid">
+          <h1 class="headline-1">
+            <span class="block">Cumple tus metas deportivas de manera inteligente</span>
+          </h1>
+          <p class="txt-1">
+            Lograr tu mejor rendimiento no está peleado con tu estilo de vida
+          </p>
+          <div class="email-1">
+            <form action="#">
+              <div class="txt-2">
+                <div>
+                  <label hidden for="email" class="sr-only">Email address</label>
+                  <input id="email" type="email" placeholder="Ingresa tu correo" class="m-button">
                 </div>
-         
+                <div>
+                  <button type="submit" class="send">Enviar</button>
+                </div>
+              </div>
+              <p class="txt-3">Te contactaremos en 24 horas. Aceptamos todas las tarjetas de crédito y débito. <a href="#" class="font-medium text-white">Conoce nuestros términos y condiciones</a>.</p>
+            </form>
+          </div>
+        </div> 
+      </main>
+
+      <!-- Blog -->
+      <div>
+            <h2>Conoce más</h2>
+            <p>
+              Trainability Mx
+            </p>
+            <p>
+              ¿Quieres entrenar donde sea y cuando sea? Esta es la mejor opción
+            </p>
+      </div>
+
+      <div>
+        <img class="items" src="https://www.openaccessgovernment.org/wp-content/uploads/2018/08/dreamstime_s_42579151.jpg" alt="">
+      </div>
+        <div>
+          <p>
+            <a href="#" class="hover:underline"> Conoce más
+            </a>
+          </p>
+            <a href="#">
+              <p> Entrenamiento personalizado
+              </p>
+              <p> Programa de entrenamiento en línea. Obtén mejores resultados en tu rendimiento deportivo.
+              </p>
+            </a>
+          </div>
+
+          <div>
+            <img class="items" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROkQNSKNA7dRtPSl3FvXxQlibTuMNljFswCg&usqp=CAU" alt="">
+          </div>
+            <div>
+              <p>
+                <a href="#" class="hover:underline"> Conoce más
+                </a>
+              </p>
+                <a href="#">
+                  <p> Entrenamiento personalizado
+                  </p>
+                  <p> Programa de entrenamiento en línea. Obtén mejores resultados en tu rendimiento deportivo.
+                  </p>
+                </a>
+              </div>
+
+              <div>
+                <img class="items" src="https://media1.popsugar-assets.com/files/thumbor/vfKZC1EoCN8Kmolk2Vrj8vpRpx4/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2018/10/04/692/n/1922729/cb7f5be45bb63396984fc6.71791194_/i/Weekly-Workout-Plan-Women.jpg" alt="">
+              </div>
+                <div>
+                  <p>
+                    <a href="#" class="hover:underline"> Conoce más
+                    </a>
+                  </p>
+                    <a href="#">
+                      <p> Entrenamiento personalizado
+                      </p>
+                      <p> Programa de entrenamiento en línea. Obtén mejores resultados en tu rendimiento deportivo.
+                      </p>
+                    </a>
+                  </div>
+    </div>
+  </div>
+
     <!-- Extra 1 -->
     <div>
       <div>
