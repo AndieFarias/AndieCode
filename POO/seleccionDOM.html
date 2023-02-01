@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección DOM </title>
+</head>
+
+<body>
+
+    <h1 id="titulo"> Titulo del sitio web
+    </h1>
+    <div id="subtitulo"></div>
+
+    <p>
+        1. Lorem ipsum dolor <b> sit amet</b> consectetur adipisicing elit. A iure praesentium cupiditate eum. Dignissimos molestiae ducimus corporis iusto eveniet hic fugiat odio, libero accusantium, quis quas ut, earum facilis doloremque!
+    </p>
+
+    <p id="segundo">
+        2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aliquam architecto. Totam mollitia quis iste accusantium, ea nulla animi ipsa rerum quod a architecto laboriosam reiciendis harum enim, tempore minus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit reprehenderit autem porro quia iure, officia exercitationem magni enim minus quidem dolores adipisci eos labore repellendus consequuntur quaerat ipsam animi cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorum magnam numquam suscipit aperiam ullam itaque debitis cupiditate quasi, animi amet fuga autem error cumque dolores voluptatum. Officiis, animi molestiae.
+    </p>
+
+    <p>
+       3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ut sunt laudantium. Exercitationem a minima tenetur commodi, amet facere optio in deserunt possimus animi autem fuga tempore molestias et maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas possimus esse blanditiis sapiente unde? Corrupti in provident dolore quae, alias, ea porro reiciendis animi nam aut vitae, at fuga voluptates.
+    </p>
+
+    <script>
+        // let elementosP = document.getElementsByTagName("p");
+        // let segundoParrafo = document.getElementById("segundo");
+
+        // Crear un elemento
+        let elemento= document.createElement("h2");
+        // Crear un nodo de texto
+        let contenido= document.createTextNode("Este es un nuevo titulo");
+        // Añadir nodo de texto al elemento
+        elemento.appendChild(contenido);
+        // Agregar atributos al elemento
+        elemento.setAttribute("align", "center");
+        // Agregar el elemento al documento
+        document.getElementById("subtitulo").appendChild(elemento);
+
+    </script>
+
+</body>
+</html>
