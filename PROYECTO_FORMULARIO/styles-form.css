@@ -5,28 +5,40 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #cfd9df 0%, #e2ebf0 100%);
-
+    background-image: linear-gradient(to right, #202021 0%, #4b4b4e 100%);
 }
+
 
 .formulario {
     display: flex;
-        flex-wrap: wrap;
-        margin-top: calc(-1 * var(--bs-gutter-y));
-        margin-right: calc(-.5 * var(--bs-gutter-x));
-        margin-left: calc(-.5 * var(--bs-gutter-x));
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.375rem 0.75rem;
+    margin-top: calc(-1);
+    margin-right: calc(-.5);
+    margin-left: calc(-.5);
 }
 
+.form-control::placeholder {
+    color: cyan;
+    opacity: 40%;
+}
 
 .form-label
 
 .input1
 
-.form-control
+.form-control-color
 
-.form-check
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+}
 
 .form-check-input
 
 .enviar
+
 
