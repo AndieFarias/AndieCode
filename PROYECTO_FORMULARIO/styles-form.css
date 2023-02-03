@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #cfd9df 0%, #e2ebf0 100%);
+
+}
+
+.formulario {
+    display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+
+.form-label
+
+.input1
+
+.form-control
+
+.form-check
+
+.form-check-input
+
+.enviar
+

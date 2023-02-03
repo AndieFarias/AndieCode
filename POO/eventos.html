@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <button id="boton1">Botón Tolón</button>
+    <input type="text" id="input">
+
+    <button id="boton2">Botón Tilín</button>
+    <input type="text" id="input2">
+
+    <script>
+        //Evento click
+        (function(){
+
+            let saludo = function(){
+                alert('hiciste click')
+            };
+
+            let saludo2 = function(){
+                alert('hiciste click otra vez')
+            };
+
+            let boton = document.getElementById("boton1");
+            boton.addEventListener('click', saludo);
+            boton.addEventListener('click', saludo2);
+
+        }()
+        )
+
+        //Evento Focus
+        // (function(){
+        //     let saludo3 = function(){
+        //         console.log(focus);
+        //     };
+
+        //     let input = document.getElementById('input2');
+        //     input.addEventListener("focus", saludo3);
+        // }()
+        // )
+
+        //Evento Blur
+        // (function(){
+        //     let saludo3 = function(){
+        //         console.log(blur);
+        //     };
+
+        //     let input = document.getElementById('input2');
+        //     input.addEventListener("blur", saludo3);
+        // }()
+        // )
+
+        //Evento Change
+        // (function(){
+
+        //     let saludo3 = function(){
+        //         console.log('change)')
+        //     };
+
+        //     let input = document.getElementById('input2');
+        //     input.addEventListener("change", saludo3);
+        //     }
+        //     ())
+
+        //Evento Remove
+        (function(){
+
+            let saludo = function(){
+                console.log('saludo')
+            };
+
+            let saludo2 = function(){
+                console.log('saludo2')
+            };
+
+            let boton = document.getElementById("boton1");
+            boton.addEventListener('click', saludo);
+            boton.addEventListener('click', saludo2);
+            boton.removeEventListener('click', saludo);
+
+            }()
+            )
+
+
+    </script>
+</body>
+</html>

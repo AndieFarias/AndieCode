@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion DOM</title>
+</head>
+
+<body>
+    <ol id="lista">
+        <li id="primero">Lorem ipsum <b> dolor</b> sit amet consectetur, adipisicing elit. Ratione, molestias</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ol>
+
+    <script>
+        //Modificar el contenido de los elementos
+        // let primerElemento= document.getElementById("primero");
+        // primerElemento.innerHTML= "Nuevo <b>Texto</b>";
+
+        //Reemplazar nodos del DOM- MODO NO TAN CORRECTO DE HACERLO
+        let elemento = document.createElement("li");
+        let contenido = document.createTextNode("Nuevo Texto 2");
+        elemento.appendChild(contenido);
+        let padre = document.getElementsByTagName("li")[0].parentNode;
+
+        let referencia = document.getElementsByTagName("li")[0];
+        // padre.replaceChild(elemento, referencia);
+
+        //Eliminar nodos
+        padre.removeChild(referencia);
+
+
+    </script>
+</body>
+</html>
