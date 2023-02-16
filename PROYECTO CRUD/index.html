@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CRUD- Andie Farias</title>
+    <link rel="stylesheet" href="/PROYECTO CRUD/estilos-crud.css">
+    <!-- BOOTSTRAP <link rel="stylesheet" href=""> -->
+</head>
+
+<body>
+    <h1><center>Proyecto CRUD</center></h1>
+	<hr>
+
+<!-- Formulario de ingreso de datos -->
+		<div class="client-form">
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div>
+                    <label>Nombre Completo*</label><label class="validation-error hide" id="fullNameValidationError">Este campo es obligatorio.</label>
+                    <input type="text" name="fullName" id="fullName">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label>Membresía</label>
+                    <input type="text" name="membresia" id="membresia">
+                </div>
+                <div>
+                    <label>Deporte Principal</label>
+                    <input type="text" name="deporte" id="deporte">
+                </div>
+    
+                <div  class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+		</div>
+        <br/>
+
+<!-- Tabla que se va actualizando -->
+		<div class = "client-table">
+            <table class="list" id="clientList">
+                <thead>
+                    <tr>
+                        <th>Nombre Completo</th>
+                        <th>Email</th>
+                        <th>Membresía</th>
+                        <th>Deporte Principal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+</body>
+
+<footer>
+    <h2><center>Elaborado por Andrea González Farias / 2023</center></h1>
+</footer>
+
+<script src="/PROYECTO CRUD/script.js"></script>
+</html>
