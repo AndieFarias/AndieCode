@@ -49,8 +49,9 @@ function crear(e){
     leer();
 }
 
-//Funcion leer
+//Funcion leer y crea Card
 function leer(){
+    // let id = 4;
     let cliente = JSON.parse(localStorage.getItem("cliente"));
     const contenedor = document.getElementById("contenedor");
     contenedor.innerHTML = ""
@@ -77,18 +78,24 @@ function leer(){
             </div>
         `
         contenedor.appendChild(tarjeta);
+        // id += 1;
     } 
         // Función de editar nombre en Card
     const editarNombre = document.getElementById("h3Name");
     const editButton = document.getElementById("editName");
 
 
-    editButton.addEventListener("click", function(){
+    editButton.addEventListener("click", function(event){
+        // event.target
+        // event
         editarNombre.contentEditable = true;
         editarNombre.style.backgroundColor = "#dddbdb";
     } );
     
+    // let camposNombre = document.querySelectorAll('nombre');
+    // camposNombre[elem1, elem2, elem3]
 
+    // camposNombre.forEach(elemento => elemento.addEventListener(... ))
 
 }
 
